@@ -54,7 +54,7 @@ public class Test1 {
         trainingSet3.addRow(new DataSetRow(new double[]{1, 0}, new double[]{1}));
         trainingSet3.addRow(new DataSetRow(new double[]{1, 1}, new double[]{0}));
 
-        // 建立一个感知器，定义输入刺激是2个，感知器输出是1个，这里用 Neuroph 提供的 Perceptron 类
+        // 建立一个单层感知器，定义输入刺激是2个，感知器输出是1个，这里用 Neuroph 提供的 Perceptron 类
         NeuralNetwork myPerceptron = new Perceptron(2, 1);
         LearningRule learningRule = myPerceptron.getLearningRule(); // 学习规则
         learningRule.addListener(new LearningEventListener() {
